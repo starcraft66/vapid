@@ -94,6 +94,6 @@ public class ModuleSounder extends ModuleBase
 		String server = mc.thePlayer.sendQueue.getNetworkManager().getSocketAddress().toString();
 
 		String urlString = "http://2b2t.pyrobyte.net/sound.php?username=" + username + "&server=" + server + "&x=" + Integer.toString(x) + "&z=" + Integer.toString(z) + "&type=" + type;
-		pool.submit(new HttpGet(urlString));
+		//pool.submit(new HttpGet(urlString));
 	}
 }
